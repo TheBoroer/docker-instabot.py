@@ -1,0 +1,4 @@
+[submodule "instabot.py"]
+	path = instabot.py
+	url = https://github.com/instabot-py/instabot.py.git
+	branch = master
