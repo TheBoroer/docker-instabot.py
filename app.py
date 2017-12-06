@@ -106,7 +106,7 @@ while True:
         unfollow_protocol(bot)
 
     elif mode == 6 :
-        bot.new_auto_mod_just_like()
+        bot.auto_mod()
 
     else:
         print("Wrong mode!")
