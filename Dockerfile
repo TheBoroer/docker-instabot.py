@@ -4,9 +4,7 @@ RUN pip3 install --upgrade pip
 
 RUN pip3 install requests
 
-ADD ./instabot.py /usr/src/app
-
-ADD ./app.py /usr/src/app/app.py
+ADD . /usr/src/app
 
 WORKDIR /usr/src/app
 
