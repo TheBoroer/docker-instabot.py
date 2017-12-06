@@ -6,8 +6,6 @@ RUN pip3 install requests
 
 ADD ./instabot.py /usr/src/app
 
-RUN git submodule init
-
 ADD ./app.py /usr/src/app/app.py
 
 WORKDIR /usr/src/app
