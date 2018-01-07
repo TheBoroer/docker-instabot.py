@@ -1,9 +1,0 @@
-[submodule "instabot"]
-	path = instabot
-	url = https://github.com/instabot-py/instabot.py
-	branch = master
-
-[submodule "instabot-original"]
-	path = instabot-original
-	url = https://github.com/instabot-py/instabot.py.git
-	branch = master
