@@ -4,7 +4,7 @@ import os
 import sys
 import time
 
-sys.path.append(os.path.join(sys.path[0], 'instabot/src'))
+sys.path.append(os.path.join(sys.path[0], 'instabotv2/src'))
 
 from check_status import check_status
 from feed_scanner import feed_scanner
