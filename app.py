@@ -5,7 +5,7 @@ import os
 import sys
 import time
 
-sys.path.append(os.path.join(sys.path[0], 'instabot/src'))
+sys.path.append(os.path.join(sys.path[0], 'instabot'))
 username = os.environ['USERNAME']
 password = os.environ['PASSWORD']
 tag_list = os.environ['TAGLIST'].split(",")
