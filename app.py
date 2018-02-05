@@ -1,14 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
+import os
+import sys
+import time
+
 sys.path.append(os.path.join(sys.path[0], 'instabot/src'))
 username = os.environ['USERNAME']
 password = os.environ['PASSWORD']
 tag_list = os.environ['TAGLIST'].split(",")
 tag_blacklist = os.environ['TAGBLACKLIST'].split(",")
 bot_mode = os.environ['BOTMODE']
-
-import os
-import time
 
 from src import InstaBot
 from src.check_status import check_status
