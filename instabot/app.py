@@ -12,6 +12,12 @@ tag_list = os.environ['TAGLIST'].split(",")
 tag_blacklist = os.environ['TAGBLACKLIST'].split(",")
 bot_mode = os.environ['BOTMODE']
 
+
+bot_likesperday = os.getenv['LIKES_PER_DAY', 1000]
+bot_followperday = os.getenv['FOLLOW_PER_DAY', 200]
+bot_unfollowperday = os.getenv['UNFOLLOW_PER_DAY', 200]
+
+
 from src import InstaBot
 from src.check_status import check_status
 from src.feed_scanner import feed_scanner
