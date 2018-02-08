@@ -13,9 +13,9 @@ tag_blacklist = os.environ['TAGBLACKLIST'].split(",")
 bot_mode = os.environ['BOTMODE']
 
 
-bot_likesperday = os.getenv('LIKES_PER_DAY', 1000)
-bot_followperday = os.getenv('FOLLOW_PER_DAY', 200)
-bot_unfollowperday = os.getenv('UNFOLLOW_PER_DAY', 200)
+bot_likesperday = int(os.getenv('LIKES_PER_DAY', 1000))
+bot_followperday = int(os.getenv('FOLLOW_PER_DAY', 200))
+bot_unfollowperday = int(os.getenv('UNFOLLOW_PER_DAY', 200))
 
 
 from src import InstaBot
@@ -27,15 +27,15 @@ from src.unfollow_protocol import unfollow_protocol
 bot = InstaBot(
     login=username,
     password=password,
-    like_per_day=600,
+    like_per_day=bot_likesperday,
     comments_per_day=0,
     tag_list=tag_list,
     tag_blacklist=tag_blacklist,
     user_blacklist={},
     max_like_for_one_tag=50,
-    follow_per_day=200,
+    follow_per_day=bot_followperday,
     follow_time=1 * 60,
-    unfollow_per_day=200,
+    unfollow_per_day=bot_unfollowperday,
     unfollow_break_min=15,
     unfollow_break_max=30,
     log_mod=0,
